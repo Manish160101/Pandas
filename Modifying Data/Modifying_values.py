@@ -2,6 +2,7 @@
 We can modify any cell using loc method
 
 .loc[row_index, "Column_name"] => Data
+.loc[list_of_row_index,"Column_name"] => Changes value on all mentioned Index positions
 
 '''
 import pandas as pd
