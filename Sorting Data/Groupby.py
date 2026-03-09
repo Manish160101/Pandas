@@ -14,7 +14,8 @@ count() -> to count null values
 min()
 max()
 std() -> Standard Deviation
-
+Values_count() -> Used to sum of the occurence of each value
+unique() -> To fin unique values in Column
 '''
 
 import pandas as pd
@@ -29,3 +30,5 @@ data = {
 df = pd.DataFrame(data)
 
 print(df.groupby(["Age"])["Salary"].agg(["sum","mean"]))
+print(df["Age"].unique())
+print(df["Age"].value_counts())
